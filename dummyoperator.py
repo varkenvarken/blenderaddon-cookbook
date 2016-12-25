@@ -1,16 +1,17 @@
 import bpy
 
 bl_info = {
-	"name": "Dummy Operation",
+	"name": "Dummy Operator",
 	"author": "Michel Anders (varkenvarken)",
-	"version": (0, 0, 201612251157),
+	"version": (0, 0, 201612251505),
 	"blender": (2, 78, 0),
 	"location": "View3D > Add > Mesh > Dummy Op",
 	"description": "A dummy operator",
 	"warning": "",
 	"wiki_url": "",
 	"tracker_url": "",
-	"category": "Add Mesh"}
+	# Note: you can define your own category if you like
+	"category": "Experimental development"}
 
 
 class DummyOp(bpy.types.Operator):
