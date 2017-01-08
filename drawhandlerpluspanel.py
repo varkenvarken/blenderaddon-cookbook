@@ -100,6 +100,7 @@ class ModalDrawHandlerOp(bpy.types.Operator):
 			print('timer removed')
 		if handler:
 			bpy.types.SpaceView3D.draw_handler_remove(handler, 'WINDOW')
+			handler = None
 			print('handler removed')
 		context.area.tag_redraw()
 
