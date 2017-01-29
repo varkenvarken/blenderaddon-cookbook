@@ -23,9 +23,6 @@ class ProgressOp(bpy.types.Operator):
 	def poll(self, context):
 		return (context.mode == 'OBJECT')
 
-# no draw function, add one if needed
-
-# the execute function is empty
 	def execute(self, context):
 		wm = context.window_manager
 		wm.progress_begin(0, 5)
@@ -34,10 +31,6 @@ class ProgressOp(bpy.types.Operator):
 			sleep(1)  # imagine we do something heavy here
 		wm.progress_end()
 		return {"FINISHED"}
-
-
-# we don't need a menu entry but it's
-# easier than hitting spacebar and searching
 
 
 def menu_func(self, context):

@@ -65,21 +65,15 @@ class ProgressOpContext(bpy.types.Operator):
 		return {"FINISHED"}
 
 
-# we don't need a menu entry but it's
-# easier than hitting spacebar and searching
-
-
 def menu_func(self, context):
 	self.layout.operator(
 		ProgressOpContext.bl_idname,
 		text=ProgressOpContext.bl_label,
 		icon='PLUGIN')
 
-
 def register():
 	bpy.utils.register_module(__name__)
 	bpy.types.INFO_MT_mesh_add.append(menu_func)
-
 
 def unregister():
 	bpy.types.INFO_MT_mesh_add.remove(menu_func)
