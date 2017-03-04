@@ -46,10 +46,6 @@ class ReportOp(bpy.types.Operator):
 		return {"FINISHED"}
 
 
-# we don't need a menu entry but it's
-# easier than hitting spacebar and searching
-
-
 def menu_func(self, context):
 	self.layout.operator(
 		ReportOp.bl_idname,

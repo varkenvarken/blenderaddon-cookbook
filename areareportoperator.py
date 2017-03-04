@@ -76,10 +76,6 @@ class AreaReportModalOp(bpy.types.Operator):
 		return {'RUNNING_MODAL'}
 
 
-# we don't need a menu entry but it's
-# easier than hitting spacebar and searching
-
-
 def menu_func(self, context):
 	self.layout.operator(
 		AreaReportOp.bl_idname,
