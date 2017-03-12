@@ -8,9 +8,9 @@ from math import sin,cos
 bl_info = {
 	"name": "Draw Handler",
 	"author": "Michel Anders (varkenvarken)",
-	"version": (0, 0, 201612271118),
+	"version": (0, 0, 201703121240),
 	"blender": (2, 78, 0),
-	"location": "View3D > Add > Mesh > Draw Handler",
+	"location": "View3D > View > Show clock",
 	"description": "Install a clock",
 	"warning": "",
 	"wiki_url": "",
